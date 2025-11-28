@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bedrock Music Pack Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="container">
+  <h1>Bedrock Custom Music Pack Builder</h1>
+  <p>Upload MP3 files → auto-convert to OGG → build full resource pack.</p>
+
+  <input id="fileInput" type="file" multiple accept=".mp3" />
+
+  <div id="fileList"></div>
+
+  <button id="buildBtn">Generate .mcpack</button>
+  <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
