@@ -1,0 +1,16 @@
+{
+  "name": "minecraft-bedrock-music-pack",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "ffmpeg-static": "^5.2.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "jszip": "^3.10.1",
+    "uuid": "^9.0.1"
+  }
+}
