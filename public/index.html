@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bedrock Music Pack Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bedrock Custom Music Pack Builder</h1>
+    <p>Upload MP3 files, we convert them to OGG server-side and build a Bedrock resource pack (.mcpack).</p>
+
+    <div class="card">
+      <label class="label">
+        Pack name:
+        <input id="packName" type="text" value="Custom Music Pack" />
+      </label>
+
+      <label class="label">
+        Pack description:
+        <input id="packDesc" type="text" value="Overrides all in-game music with custom tracks." />
+      </label>
+
+      <label class="label">
+        Min engine version (Bedrock):
+        <input id="engineVersion" type="text" value="1.21.0" />
+      </label>
+    </div>
+
+    <div class="card">
+      <h2>1. Add your MP3 files</h2>
+      <input id="fileInput" type="file" multiple accept=".mp3,audio/mpeg" />
+      <div id="fileList" class="file-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>2. Build the pack</h2>
+      <button id="buildBtn">Generate .mcpack</button>
+      <div id="status" class="status"></div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
